@@ -1,0 +1,96 @@
+/* Styles for the body and overall layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Center the form vertically */
+}
+
+/* Styles for the registration form */
+form {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: calc(100% - 30px); /* Subtract padding and borders */
+    padding: 12px 15px; /* Increased padding for better touch targets */
+    margin-bottom: 15px; /* Increased margin for better spacing */
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Slightly more rounded corners */
+    font-size: 14px; /* Increased font size */
+    transition: border-color 0.3s; /* Smooth border color transition */
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+/* Input focus styles */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #347dcb; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #347dcb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+input[type="submit"]:hover {
+    background-color: #347dcb; /* Darker shade on hover */
+}
+
+input[type="button"] {
+    width: auto;
+    padding: 10px;
+    background-color: transparent;
+    color: #007bff;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    margin-bottom: 15px; /* Margin for spacing */
+}
+
+input[type="button"]:hover {
+    color: #0056b3; /* Darker shade on hover */
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+a:visited {
+    color: #0056b3;
+}

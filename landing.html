@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Our Application</title>
+    <style>
+        /* Styles for the body and overall layout */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* Center content vertically */
+            text-align: center; /* Center text */
+        }
+
+        h1 {
+            color: #347dcb /* Main heading color */
+        }
+
+        p {
+            font-size: 18px; /* Paragraph font size */
+            margin-bottom: 20px; /* Spacing below paragraph */
+        }
+
+        a {
+            display: inline-block; /* Display as block for better spacing */
+            padding: 12px 20px; /* Padding around links */
+            margin: 5px 0; /* Margin for spacing between links */
+            background-color: #347dcb; /* Link background color */
+            color: white; /* Link text color */
+            border-radius: 5px; /* Rounded corners */
+            text-decoration: none; /* Remove underline */
+            transition: background-color 0.3s; /* Smooth background color transition */
+        }
+
+        a:hover {
+            background-color: #557597; /* Darker shade on hover */
+        }
+
+        /* Additional style for the continue link */
+        .continue-link {
+            background-color: #f7f7f7; /* Light background for continue link */
+            color: #347dcb; /* Text color */
+            border: 1px solid #347dcb; /* Border color */
+        }
+
+        .continue-link:hover {
+            background-color: #347dcb; /* Change background color on hover */
+            color: white; /* Change text color on hover */
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Our Application!</h1>
+    <p>Please choose an option below:</p>
+    <a href="pages/login.html">Login</a>
+    <a href="pages/registration.html">Register</a>
+    <a href="/index.html" class="continue-link">Continue without Login</a>
+</body>
+</html>

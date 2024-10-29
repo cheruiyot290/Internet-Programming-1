@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/login_registration.css">
+    <title>Registration</title>
+</head>
+<body>
+    <!-- This is a registration page -->
+    <form action="/register" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <input type="button" id="togglePassword" value="Show Password" onclick="togglePasswordVisibility()"><br>
+        
+        <input type="submit" value="Register">
+        <a href="./login.html">Already have an account? Login</a>
+    </form> 
+    <script src="javascript/login_registration.js"></script>  
+</body>
+</html>
